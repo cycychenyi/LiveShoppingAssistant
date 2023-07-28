@@ -28,7 +28,7 @@ live_id_to_room = {
     2: '所有女生直播间',
     3: '所有女生的衣橱',
 }
-engine = sqlalchemy.create_engine('sqlite:///live_assistant.db', echo=True)
+engine = sqlalchemy.create_engine('sqlite:///database.sqlite', echo=True)
 
 
 def save_activities(activities: typing.List[dict]) -> None:

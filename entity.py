@@ -28,5 +28,5 @@ class Activity(Base):
         return {field: getattr(insert_statement.excluded, field) for field in cls.__dict__['__annotations__'].keys()}
 
 
-engine = sqlalchemy.create_engine('sqlite:///live_assistant.db', echo=True)
+engine = sqlalchemy.create_engine('sqlite:///database.sqlite', echo=True)
 Base.metadata.create_all(engine)
