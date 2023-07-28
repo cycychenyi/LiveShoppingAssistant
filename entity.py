@@ -9,7 +9,8 @@ from sqlalchemy.dialects import sqlite
 
 
 class Base(orm.DeclarativeBase):
-    # 必须写 Base 类，实体类再继承 Base 类，如果实体类直接继承 orm.DeclarativeBase 会报错，具体原因尚未深究
+    # NOTE: 必须写 Base 类，实体类再继承 Base 类，如果实体类直接继承 orm.DeclarativeBase 会报错
+    # TODO(查明必须写 Base 类的原因)
     pass
 
 
